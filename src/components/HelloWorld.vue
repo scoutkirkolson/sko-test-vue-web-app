@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <banner>Joehoeee fijn dat je er bent!!!!</banner>
     <h1>{{ msg }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
@@ -30,8 +31,14 @@
 </template>
 
 <script>
+import Components from '@scoutkirkolson/sko-test-vue-npm-library'
+import '@scoutkirkolson/sko-test-vue-npm-library/dist/sko-test-vue-npm-library.css'
+
 export default {
   name: 'HelloWorld',
+  components: {
+    Components,
+  },
   props: {
     msg: String
   }
